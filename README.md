@@ -1,7 +1,7 @@
 # kofi-discord-notification [![Netlify Status](https://api.netlify.com/api/v1/badges/028bea5f-00d6-4679-bbff-456f4251e01d/deploy-status)](https://app.netlify.com/sites/kofi-discord-notification/deploys)
 Serverless Express app running on Netlify functions to send Ko-fi notification to Discord.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P6D65UW)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/anonworks)
 
 ## Why?
 Ko-fi currently has Discord Integration which only does role assignment but not message notification on donation. I found [a Node.js script](https://github.com/eramsorgr/kofi-discord-alerts) to achieve this goal but unfortunately it needed a constantly running server environment, as well as your own domain to avoid exposing the server IP address. Hence, I modified it to make it run on [Netlify Functions](https://functions.netlify.com/), and you also get a free Netlify subdomain.
