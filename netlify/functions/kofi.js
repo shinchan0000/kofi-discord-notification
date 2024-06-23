@@ -81,17 +81,17 @@ app.use('/', async function (req, res) {
 	try {
 		const embed = new MessageBuilder();
 
-		embed.setAuthor('Ko-fi', 'https://i.imgur.com/J0egcX2.png');
-		embed.setThumbnail('https://i.imgur.com/J0egcX2.png');
+		embed.setAuthor('Ko-fi', 'https://assets-global.website-files.com/5c14e387dab576fe667689cf/64f1a9ddd0246590df69e9ef_ko-fi_logo_02-p-500.png');
+		embed.setThumbnail('https://assets-global.website-files.com/5c14e387dab576fe667689cf/64f1a9ddd0246590df69e9ef_ko-fi_logo_02-p-500.png');
 		embed.setTitle('New supporter on Ko-fi ☕');
 		if (kofi_username) embed.setURL(`https://ko-fi.com/${kofi_username}`);
 
 		switch (payload.tier_name) {
-			case 'Silver':
+			case 'Emerald':
 				embed.setColor('#797979');
-			case 'Gold:':
+			case 'Sapphire':
 				embed.setColor('#ffc530');
-			case 'Platinum':
+			case 'Ruby':
 				embed.setColor('#2ed5ff');
 			default:
 				embed.setColor('#9b59b6');
@@ -103,8 +103,8 @@ app.use('/', async function (req, res) {
 		if (payload.message && payload.message !== 'null')
 			embed.addField(`Message`, `${payload.message}`);
 		embed.setFooter(
-			`Thank you for supporting us!`,
-			`https://github.githubassets.com/images/modules/site/icons/funding_platforms/ko_fi.svg`
+			`Thank you so much for the support!`,
+			`https://assets-global.website-files.com/5c14e387dab576fe667689cf/64f1a9ddd0246590df69e9ef_ko-fi_logo_02-p-500.png`
 		);
 		embed.setTimestamp();
 
